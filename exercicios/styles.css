@@ -84,6 +84,9 @@ header div a:hover {
 .cards {
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
@@ -104,10 +107,35 @@ header div a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-.card__price {
+.price {
     background-color: var(--color-rocket);
     filter: brightness(90%);
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
 }
