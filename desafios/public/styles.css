@@ -1,0 +1,211 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
+:root {
+    --color-green: #59fa7b;
+    --color-purple: #7159c1;
+    --color-background: #242731;
+}
+/* === Styles Global=== */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* ====== Style Index ====== */
+
+.index-header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 5px;
+}
+
+.index-header {
+    text-align: center;
+}
+
+.header-div a {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+    padding: 30px;
+}
+
+
+header div a:hover {
+    color: var(--color-green);
+    transition: color 600ms;
+}
+
+/* ====== Style Sobre ====== */
+.img-h1 img {
+    margin-top: 20px;
+    border-radius: 50%;
+    border: solid 3px var(--color-green);
+}
+.img-h1 {
+    text-align: center;     /**/ /*Logo Rocket*/
+}
+
+.name-rocket {
+    padding-top: 10px;
+    padding-bottom: 40px;      /*Nome da Empresa*/
+    font-size: 50px;
+}
+
+.description {
+    text-align: center;       /*Descrição da empresa*/  
+    padding: 40px;
+    opacity: 0.7;
+}
+
+.ul-li {
+    font-size: 18px;        /*Listas*/
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.sobre-links {
+    text-align: center;
+    text-decoration: none;
+    padding: 32px;
+    letter-spacing: 3px;
+}
+
+.sobre-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.sobre-links a:hover {
+    color: var(--color-green);
+    transition: color 600ms;
+}
+
+/* ====== CARDS ====== */
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.card {
+    background-color: var(--color-purple);
+}
+
+.card__image-container img{
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__info p {
+    font-size: 15px;
+}
+
+.leitura {
+    background-color: var(--color-purple);
+    filter: brightness(80%);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-button {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+}
+
+/* === Not-found=== */
+
+.not-found h2 {
+    font-size: 24px;
+    line-height: 34px;
+    opacity: 0.8;
+  }
+  
+  .not-found p {
+    font-size: 18px;
+  }
+  
+  .not-found p a {
+    text-decoration: none;
+    color: var(--color-purple);
+    font-weight: 700;
+    transition: 400ms;
+  }
+  
+  .not-found p a:hover {
+    color: var(--color-green);
+  }
+
+  .not-found {
+      text-align: center;
+  }
